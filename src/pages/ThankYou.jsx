@@ -5,6 +5,10 @@ import "../styles/ThankYou.css";
 import NewsLetter from "../shared/NewsLetter";
 
 const ThankYou = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <section>
