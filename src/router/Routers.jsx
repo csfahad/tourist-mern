@@ -10,14 +10,14 @@ import SearchResultList from "./../pages/SearchResultList";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/tours" element={<Tours />} />
-      <Route path="/tours/:id" element={<TourDetails />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/thank-you" element={<ThankYou />} />
-      <Route path="/tours/search" element={<SearchResultList />} />
+      <Route path="/" exact element={<Navigate to="/home" />} />
+      <Route path="/home" exact element={<Home />} />
+      <Route path="/tours" exact element={<Tours />} />
+      <Route path="/tours/:id" exact element={<TourDetails />} />
+      <Route path="/login" exact element={<Login />} />
+      <Route path="/register" exact element={<Register />} />
+      <Route path="/thank-you" exact element={<ThankYou />} />
+      <Route path="/tours/search" exact element={<SearchResultList />} />
     </Routes>
   );
 };
